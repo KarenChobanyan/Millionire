@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background: url(./Images/studio.jpg) center no-repeat;
+
+}
+
+.forhelp {
+    width: 98%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid bisque;*/
+}
+
+.fordesign {
+    display: flex;
+    width: 10%;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 50%;
+    border: 5px solid rgb(236, 186, 93);
+}
+
+.fordesign:hover {
+    border: 5px solid rgb(61, 230, 111);
+}
+
+.usedForDesign {
+    display: flex;
+    width: 10%;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2, 2, 2);
+    border-radius: 50%;
+    border: 5px solid rgb(216, 29, 29);
+}
+
+
+.fifty {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    color: azure;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: 1000;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+}
+
+.fifty:hover {
+    color: rgb(49, 196, 49);
+    /* width: 150px;
+    height: 80px; */
+    transform: scale(1.2);
+}
+
+.usedHelp {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    color: rgb(194, 27, 4);
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: 1000;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.call {
+    width: 130px;
+    height: 50px;
+    background: url(./Images/call-white.png) center no-repeat;
+    background-size: contain;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+
+.callNoteCalling {
+    height: 25px;
+    text-align: center;
+    color: rgb(167, 167, 204);
+}
+
+.friendSpeech {
+    height: 35px;
+    padding-right: 10px;
+    text-align: right;
+    color: aqua;
+}
+
+.playerSpeech {
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    color: rgb(252, 252, 143);
+}
+
+.call:hover {
+    width: 160px;
+    height: 75px;
+    background-image: url(./Images/CallGreen.png);
+}
+
+.hallhelp {
+    width: 130px;
+    height: 50px;
+    background: url(./Images/Hall-white.png) center no-repeat;
+    background-size: contain;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+
+.hallhelp:hover {
+    width: 160px;
+    height: 75px;
+    background-image: url(./Images/hallColor.png);
+}
+
+.hallHelpMainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+    width: 200px;
+    height: 150px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.hallHelpFootter {
+    width: 200px;
+    height: 15px;
+    margin-top: 10px;
+    padding-left: 35px;
+    letter-spacing: 35px;
+    font-size: 20px;
+    color: rgb(241, 201, 21);
+    
+   
+}
+
+.hallHelpMainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-left: 10px;
+    width: 180px;
+    height: 35px;
+    
+}
+
+.hallHelpMainHeader div {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(105, 197, 197);
+    font: 30px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 200px;
+    /* border: 5px solid green; */
+}
+
+.takeMoney {
+    width: 60px;
+    height: 60px;
+    background: url(./Images/takeMoneyWhite.png) center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.takeMoney:hover {
+    transform: scale(1.2);
+    background: url(./Images/takeMoneyColor.png) center no-repeat;
+    background-size: contain;
+
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    align-items: center;
+    background-color: black;
+    transform: translateX(60px);
+    visibility: hidden;
+    transition-duration: 0.2s;
+}
+
+.notification #header {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(216, 152, 56);
+    ;
+}
+
+.notification #body {
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+    background-color: rgba(123, 123, 180, 0.2);
+}
+
+.currentScore {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: antiquewhite;
+    border-bottom: 1px solid rgba(245, 178, 120, 0.4);
+}
+
+.untouchable {
+    background-color: rgba(70, 115, 240, 0.3);
+}
+
+.forQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 120px;
+    /* border: 1px solid white; */
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100px;
+    border: 3px solid rgb(216, 152, 56);
+    border-radius: 25px;
+    background-color: rgb(7, 7, 7);
+
+}
+
+.questioNumber {
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    color: rgb(216, 152, 56);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.askingQuestion {
+    width: 98%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.forAnswer {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 200px;
+    /* border: 1px solid gold; */
+}
+
+.optionsLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid rgb(196, 23, 23); */
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 35%;
+    height: 60px;
+    background-color: black;
+    border: 3px solid rgb(216, 152, 56);
+    border-radius: 25px;
+    text-align: start;
+    color: azure;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.transRight {
+    transform: translateX(25px);
+}
+
+.transLeft {
+    transform: translateX(-45px);
+}
+
+.optionHover {
+    background-color: rgb(5, 5, 5);
+    border-color: rgb(216, 152, 56);
+    transition-duration: 0.2s;
+    color: rgb(216, 152, 56);
+
+}
+
+.checkedOption {
+    background-color: rgb(216, 152, 56);
+    border-color: rgb(10, 10, 10);
+    color: black;
+    font-weight: 800;
+    transition-duration: 0.2s;
+}
+
+.green {
+    background-color: green;
+}
+
+.klor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin-top: 25px;
+    border-radius: 50%;
+    transform: translateX(-25px);
+}
+
+.klorNumber {
+    width: 100px;
+    height: 100px;
+    border: 12px solid rgb(78, 221, 73);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 80px;
+    box-shadow: 0px 0px 15px rgb(221, 219, 73);
+    color: white;
+}
+
+.optionLetter {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    transform: translateX(10px);
+}
+
+.optionCheck {
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    transform: translateX(10px);
+    text-align: center;
+}
